@@ -4,6 +4,7 @@
 ## Write a short comment describing this function
 # This function creates a special matrix object that sets the value 
 #of the object, outputs its value as well as sets and output its inverse
+
 makeCacheMatrix <- function(x = matrix()) {
         inv<-NULL
         setmat <- functon(matx){
@@ -33,7 +34,7 @@ cacheSolve <- function(x, ...) {
                 return(inv)
         }
         
-        mtx <- x$get()
+        mtx <- x$getmat()
         inv <- solve(mtx, ...)
         x$setinv(inv)
         inv
